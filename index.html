@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce Clothing Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fashion Boutique</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="cart.html" class="cart">
+                        <img class="cart-icon" src="images/shopping_bag.png" alt="">
+                     <p class="js-cart-quantity">0</p>
+                    </a></li>
+                    <li><a href="return.html">Returns & Orders</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>   
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <img src="herosection_images/image1.jpg" alt="" class="js-hero-image">
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid js-products-grid">
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-sections">
+                <!-- Contact Form -->
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Links -->
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon twitter" aria-label="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram"></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon linkedin" aria-label="LinkedIn"></a>
+                </div>
+    
+                <!-- Newsletter Signup -->
+                <div class="newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form>
+                        <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+    
+                <!-- Footer Info -->
+                <div class="footer-info">
+                    <p>&copy; 2024 Fashion Boutique. All rights reserved.</p>
+        
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

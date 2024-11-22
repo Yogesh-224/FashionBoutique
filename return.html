@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns & Orders - Fashion Boutique</title>
+    <link rel="stylesheet" href="return.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fashion Boutique</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="returns.html" class="active">Returns & Orders</a></li>
+                    <li><a href="cart.html" class="cart">
+                        <img class="cart-icon" src="images/shopping_bag.png" alt="">
+                        <p class="js-cart-quantity">0</p>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="returns-orders" class="returns-orders">
+        <div class="container">
+            <h2>Returns & Orders</h2>
+
+            <!-- Orders Section -->
+            <div class="orders">
+                <h3>Your Orders</h3>
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Product</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example order entry -->
+                        <tr>
+                            <td>#12345</td>
+                            <td>2024-09-15</td>
+                            <td>Casual T-Shirt</td>
+                            <td>Shipped</td>
+                            <td><button class="btn">Track</button></td>
+                        </tr>
+                        <tr>
+                            <td>#12346</td>
+                            <td>2024-09-10</td>
+                            <td>Denim Jacket</td>
+                            <td>Delivered</td>
+                            <td><button class="btn">Return</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Returns Section -->
+            <div class="returns">
+                <h3>Return Requests</h3>
+                <table class="returns-table">
+                    <thead>
+                        <tr>
+                            <th>Return ID</th>
+                            <th>Date</th>
+                            <th>Product</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example return entry -->
+                        <tr>
+                            <td>#54321</td>
+                            <td>2024-09-18</td>
+                            <td>Casual T-Shirt</td>
+                            <td>In Process</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2024 Fashion Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#checkout {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+}
+
+#checkout .container {
+    width: 80%;
+    margin: 0 auto;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+#checkout h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.billing-info, .payment-info {
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.checkout-btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    #checkout .container {
+        width: 90%;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    .checkout-btn {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .container {
+        width: 95%;
+    }
+
+    #checkout .container {
+        width: 95%;
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: 0.9rem;
+    }
+
+    .checkout-btn {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
